@@ -1,0 +1,28 @@
+1.1系统基本管理、显示的相关命令
+  1.shutdown
+  shutdown [option] [time]
+  -h 关机。参数是时间表示规定在什么时候关机
+  -r 重启。参数是now表示立即重启
+  -t 延迟关机时间
+  -k 发给警告信息给所有已登陆的用户，用来提示
+  -c 取消已在进行的shutdowm指令
+  2.roboot
+  reboot [选项]
+  reboot -f 强制重启系统
+  reboot -i 关闭网络连接再重启系统
+  reboot -n 保存数据后再重启系统
+  reboot -w 模拟系统重启系统，不会真的重启
+  3.poweroff
+  poweroff [选项]
+  描述：关闭linux操作系统，关闭记录会被写入/var/log/wtmp日志文件中。使用改命令会立即关闭系统，不给一点反应时间
+  poweroff -w 模拟系统关机，并不会真的的关机
+  4.logout
+  等效于Windows中的注销命令
+  5.exit
+  以指定的状态退出当前shell或者在shell脚本中终止当前脚本的运行
+  6.uname
+  打印系统信息
+  -a 显示全部信息
+  -m 显示机器的处理器架构
+  -n 显示主机名词
+  -r 显示操作系统的发行编号
